@@ -37,7 +37,7 @@ TailwindCSS
 Backend:
 
 Node.js
-Express.js
+
 Database:
 
 MySQL
