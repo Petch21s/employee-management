@@ -1,36 +1,55 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+Employee Management System
+ระบบจัดการพนักงานนี้เป็นแอปพลิเคชันที่ใช้ในการเพิ่ม แก้ไข ลบ และดูข้อมูลของพนักงานในองค์กร โดยผู้ใช้งานสามารถจัดการข้อมูลพนักงานได้อย่างสะดวกและรวดเร็ว
 
-## Getting Started
+Table of Contents
+Project Overview
+Technologies Used
+Features
+API Endpoints
+Database Schema
+Installation Instructions
+Usage
+Contributing
+License
+Project Overview
+ระบบจัดการพนักงานนี้ได้รับการออกแบบมาเพื่อช่วยให้เจ้าหน้าที่ทรัพยากรบุคคล (HR) และผู้ดูแลระบบ (Admin) สามารถจัดการข้อมูลพนักงานได้ง่ายและสะดวก โดยการเพิ่ม แก้ไข ลบ และค้นหาข้อมูลพนักงานที่เกี่ยวข้องกับการทำงานในองค์กร ระบบนี้รองรับการใช้งานทั้งในรูปแบบแอปพลิเคชันเว็บและ API ที่สามารถเชื่อมต่อกับระบบภายนอกได้
 
-First, run the development server:
+Purpose
+การจัดการข้อมูลพนักงานในองค์กร เช่น ชื่อ ตำแหน่ง เงินเดือน อีเมล โทรศัพท์ และสถานะการทำงาน
+เพิ่มประสิทธิภาพในการค้นหาข้อมูลพนักงาน
+สร้างความสะดวกในการอัปเดตข้อมูลพนักงาน
+Users
+ผู้ดูแลระบบ (Admin)
+เจ้าหน้าที่ทรัพยากรบุคคล (HR)
+Features
+เพิ่มพนักงานใหม่
+แก้ไขข้อมูลพนักงาน
+ลบพนักงาน
+ค้นหาพนักงาน
+แสดงข้อมูลพนักงานในตาราง
+จัดการสถานะพนักงาน (Active, Inactive, On Leave)
+ระบบ pagination สำหรับการแสดงข้อมูลพนักงานจำนวนมาก
+Technologies Used
+Frontend:
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Next.js
+TailwindCSS
+Backend:
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Node.js
+Express.js
+Database:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+MySQL
+Features
+1. การเพิ่มพนักงานใหม่
+ผู้ใช้งานสามารถกรอกข้อมูลของพนักงานใหม่ได้จากฟอร์ม และบันทึกข้อมูลลงในฐานข้อมูล
+2. การแก้ไขข้อมูลพนักงาน
+ผู้ใช้งานสามารถเลือกพนักงานจากรายการเพื่อแก้ไขข้อมูล เช่น ชื่อ ตำแหน่ง เงินเดือน อีเมล เป็นต้น
+3. การลบพนักงาน
+ผู้ใช้งานสามารถลบข้อมูลพนักงานออกจากฐานข้อมูลได้
+4. การค้นหาพนักงาน
+ระบบรองรับการค้นหาพนักงานตามชื่อหรือตำแหน่ง
+5. การจัดการสถานะพนักงาน
+ระบบสามารถกำหนดสถานะของพนักงานได้ เช่น "Active", "Inactive", "On Leave"
+6. Pagination
